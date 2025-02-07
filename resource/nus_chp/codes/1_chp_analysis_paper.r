@@ -49,6 +49,13 @@ boxplot(chp$ldl,ylab="LDL Cholesterol (mmol/L)", main="Boxplot of LDL Cholestero
   
 # (i) Age
 
+summary(chp$age)
+quantile(chp$age)
+quantile(chp$age,na.rm = TRUE)
+# Checking the distribution of the variable (using histogram)
+hist(chp$age,breaks = 100,xlab="age (in years)", main="Histogram of age")
+# Checking for outliers (using box plot)
+boxplot(chp$age,ylab="age (in years)", main="Boxplot of age",col = 'grey')
 
 
 
